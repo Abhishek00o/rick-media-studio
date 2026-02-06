@@ -1,14 +1,15 @@
 function sendData(e){
   e.preventDefault();
 
-  const msg =
-`New Booking:
+  const message =
+`New Booking Request:
 Name: ${name.value}
 Email: ${email.value}
 Service: ${service.value}
 Details: ${details.value}`;
 
-  window.open(
-    `mailto:abhisheksharm789@gmail.com?subject=New Booking&body=${encodeURIComponent(msg)}`
-  );
+  const phone = "91XXXXXXXXXX"; // apna number yahan daalo
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
 }
