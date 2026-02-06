@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+<div class="form-card slide-in">
+  <h2>Book Our Service</h2>
+
+  <form onsubmit="sendData(event)">
+    <input id="name" placeholder="Your Name" required>
+    <input id="email" type="email" placeholder="Your Email" required>
+
+    <select id="service" required>
+      <option value="">Select Service</option>
+      <option>Video Editing</option>
+      <option>Social Media Handling</option>
+      <option>Complete Marketing</option>
+    </select>
+
+    <textarea id="details" placeholder="Describe your requirement" required></textarea>
+
+    <button type="submit">Send Request</button>
+  </form>
+
+  <p class="note">We’ll contact you after reviewing your request.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
