@@ -1,4 +1,4 @@
-function sendData(e){
+function sendData(e) {
   e.preventDefault();
 
   const message =
@@ -8,7 +8,7 @@ Email: ${email.value}
 Service: ${service.value}
 Details: ${details.value}`;
 
-  const phone = "91XXXXXXXXXX"; // apna number yahan daalo
+  const phone = "91XXXXXXXXXX"; // ← apna WhatsApp number daalo
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
   window.open(url, "_blank");
